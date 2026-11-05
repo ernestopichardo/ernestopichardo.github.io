@@ -7,8 +7,15 @@
 <meta name="description" content="Productor audiovisual y estratega de contenido para YouTube, podcasts y formato corto. 10M+ impresiones, reels de hasta 2.3M de vistas.">
 <meta property="og:title" content="Ernesto Pichardo — Productor Audiovisual & Estratega de Contenido">
 <meta property="og:description" content="YouTube, podcasts y formato corto. 10M+ impresiones · reels de hasta 2.3M de vistas.">
-<meta property="og:image" content="https://i.ytimg.com/vi/oAeK76qh-OE/hqdefault.jpg">
+<meta property="og:image" content="https://ernestopichardo.github.io/og.png?v=2">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ernesto Pichardo — Productor Audiovisual & Estratega de Contenido">
+<meta property="og:url" content="https://ernestopichardo.github.io/">
+<meta property="og:site_name" content="Ernesto Pichardo">
 <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ernestopichardo.github.io/og.png?v=2">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2314141a'/><circle cx='16' cy='16' r='7' fill='%23ff3b3b'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,7 +78,7 @@ h2{font-size:clamp(28px,4vw,42px);line-height:1.15;font-weight:700;letter-spacin
 /* reels */
 .reels{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px;margin-top:36px}
 .reel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
-.reel .frame{position:relative;height:384px;overflow:hidden;background:#000}
+.reel .frame{position:relative;aspect-ratio:4/5;overflow:hidden;background:#000}
 .reel iframe{position:absolute;left:0;top:-54px;width:100%;height:calc(100% + 54px + 180px);border:0}
 .reel .meta{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;border-top:1px solid var(--line)}
 .views{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:20px}
@@ -90,6 +97,28 @@ h2{font-size:clamp(28px,4vw,42px);line-height:1.15;font-weight:700;letter-spacin
 .ytcard .body{padding:16px 18px 20px}
 .ytcard h3{font-size:16px;font-weight:600;line-height:1.4}
 .ytcard .views{font-size:17px;margin-top:10px;display:block}
+.ytcard .tag{display:block;font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--rec);margin-bottom:6px}
+
+/* featured row: 1 long-form + 2 reels */
+.featured{display:grid;grid-template-columns:1.7fr 1fr 1fr;gap:18px;margin-top:36px;align-items:start}
+@media(max-width:900px){.featured{grid-template-columns:1fr 1fr}.featured .ytcard{grid-column:1/-1}}
+@media(max-width:560px){
+  .featured,.reels{grid-template-columns:1fr 1fr;gap:10px}
+  .reel .meta{padding:10px 10px}
+  .reel .views{font-size:15px}
+  .reel .views small{display:none}
+  .reel .meta a{font-size:0}
+  .reel .meta a::after{content:"↗";font-size:16px}
+}
+.more-wrap{display:flex;justify-content:center;margin-top:30px}
+.btn.more{cursor:pointer;background:var(--card);color:var(--text);font-family:Poppins,sans-serif}
+.btn.more .lbl-close{display:none}
+.btn.more[aria-expanded=true] .lbl-open{display:none}
+.btn.more[aria-expanded=true] .lbl-close{display:inline}
+.btn.more .chev{transition:transform .2s}
+.btn.more[aria-expanded=true] .chev{transform:rotate(180deg)}
+.subhead{font-size:20px;font-weight:600;margin-top:44px}
+#more .reels,#more .yt{margin-top:18px}
 
 /* about */
 .about{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:start}
@@ -159,11 +188,11 @@ html[lang=en] [data-en]{display:revert}
 
 <section id="reels">
   <div class="wrap">
-    <p class="kicker">● 01 / <span data-es>FORMATO CORTO</span><span data-en>SHORT-FORM</span></p>
-    <h2><span data-es>Reels virales</span><span data-en>Viral reels</span></h2>
+    <p class="kicker">● 01 / <span data-es>TRABAJO DESTACADO</span><span data-en>FEATURED WORK</span></p>
+    <h2><span data-es>Videos que la gente termina de ver</span><span data-en>Videos people watch to the end</span></h2>
     <p class="sub">
-      <span data-es>Siete reels para The Driver Show que suman 9.8 millones de vistas en Instagram.</span>
-      <span data-en>Seven reels for The Driver Show totaling 9.8 million views on Instagram.</span>
+      <span data-es>Reels virales y entrevistas de formato largo para The Driver Show: 9.8 millones de vistas solo en 7 reels.</span>
+      <span data-en>Viral reels and long-form interviews for The Driver Show: 9.8 million views from just 7 reels.</span>
     </p>
     <div class="credit">
       <span class="chip"><span data-es>Producción</span><span data-en>Producing</span></span>
@@ -172,26 +201,29 @@ html[lang=en] [data-en]{display:revert}
       <span class="chip">Audio</span>
       <span class="chip"><span data-es>Edición</span><span data-en>Editing</span></span>
     </div>
-    <div class="reels" id="reelgrid"></div>
-  </div>
-</section>
+    <div class="featured" id="featured"></div>
 
-<section id="youtube" style="padding-top:24px">
-  <div class="wrap">
-    <p class="kicker">● 02 / <span data-es>FORMATO LARGO</span><span data-en>LONG-FORM</span></p>
-    <h2><span data-es>YouTube: entrevistas y podcast</span><span data-en>YouTube: interviews &amp; podcast</span></h2>
-    <p class="sub">
-      <span data-es>Entrevistas de formato largo con multicámara. Producción, guion, cámara, audio y edición.</span>
-      <span data-en>Multi-camera long-form interviews. Producing, script, camera, audio and editing.</span>
-    </p>
-    <div class="yt" id="ytgrid"></div>
+    <div class="more-wrap">
+      <button type="button" class="btn more" id="morebtn" aria-expanded="false" aria-controls="more">
+        <span class="lbl-open"><span data-es>Ver más videos</span><span data-en>See more videos</span> <span class="mono">(+7)</span></span>
+        <span class="lbl-close"><span data-es>Ver menos</span><span data-en>Show less</span></span>
+        <span class="chev" aria-hidden="true">↓</span>
+      </button>
+    </div>
+
+    <div id="more" hidden>
+      <h3 class="subhead"><span data-es>Más reels</span><span data-en>More reels</span></h3>
+      <div class="reels" id="reelgrid"></div>
+      <h3 class="subhead"><span data-es>Más de YouTube</span><span data-en>More on YouTube</span></h3>
+      <div class="yt" id="ytgrid"></div>
+    </div>
   </div>
 </section>
 
 <section id="sobre">
   <div class="wrap about">
     <div>
-      <p class="kicker">● 03 / <span data-es>SOBRE MÍ</span><span data-en>ABOUT</span></p>
+      <p class="kicker">● 02 / <span data-es>SOBRE MÍ</span><span data-en>ABOUT</span></p>
       <h2><span data-es>Narrativa de cine,<br>pensada para retener.</span><span data-en>Film storytelling,<br>built to retain.</span></h2>
       <p class="sub" style="margin-top:16px">
         <span data-es>Graduado de Cine y Comunicación Audiovisual en INTEC. Combino narrativa cinematográfica con análisis de retención y diseño de ganchos para que la gente vea hasta el final. Trabajo en español e inglés (competencia profesional).</span>
@@ -248,7 +280,7 @@ html[lang=en] [data-en]{display:revert}
   <div class="wrap">
     <div class="contact">
       <p class="kicker">● <span data-es>DISPONIBLE</span><span data-en>AVAILABLE</span></p>
-      <h2><span data-es>¿Hacemos el próximo video juntos?</span><span data-en>Let's make your next video.</span></h2>
+      <h2><span data-es>¿Hacemos tu próximo proyecto juntos?</span><span data-en>Shall we make your next project together?</span></h2>
       <p class="sub"><span data-es>Santo Domingo, República Dominicana. Disponible para trabajo presencial, híbrido o remoto.</span><span data-en>Based in Santo Domingo, Dominican Republic (UTC-4). Open to remote roles worldwide.</span></p>
       <div class="ctas">
         <a class="btn primary" href="mailto:ernestopc659@gmail.com">ernestopc659@gmail.com</a>
@@ -280,26 +312,39 @@ const VIDEOS = [
 ];
 const views = '<small><span data-es>vistas</span><span data-en>views</span></small>';
 
-document.getElementById('reelgrid').innerHTML = REELS.map(([id, v]) => `
+const reelHTML = ([id, v]) => `
   <article class="reel">
     <div class="frame"><iframe src="https://www.instagram.com/reel/${id}/embed/" loading="lazy" scrolling="no" allowtransparency="true" allow="encrypted-media" title="Reel ${v}"></iframe></div>
     <div class="meta"><span class="views">${v}${views}</span>
       <a href="https://www.instagram.com/reel/${id}/" target="_blank" rel="noopener">Instagram ↗</a></div>
-  </article>`).join('');
-
-document.getElementById('ytgrid').innerHTML = VIDEOS.map(([id, v, t]) => `
+  </article>`;
+const ytHTML = ([id, v, t]) => `
   <article class="ytcard">
     <div class="player" data-id="${id}" role="button" tabindex="0" aria-label="Play: ${t}">
       <img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span>
     </div>
-    <div class="body"><h3>${t}</h3><span class="views">${v}${views}</span></div>
-  </article>`).join('');
+    <div class="body"><span class="tag">YouTube</span><h3>${t}</h3><span class="views">${v}${views}</span></div>
+  </article>`;
 
-document.querySelectorAll('.player').forEach(p => {
-  const go = () => { p.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${p.dataset.id}?autoplay=1&rel=0" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen title="YouTube"></iframe>`; };
-  p.addEventListener('click', go, {once:true});
-  p.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } });
+// featured: best long-form + 2 best reels; the rest only loads when asked for
+document.getElementById('featured').innerHTML = ytHTML(VIDEOS[0]) + REELS.slice(0, 2).map(reelHTML).join('');
+const more = document.getElementById('more'), morebtn = document.getElementById('morebtn');
+let moreLoaded = false;
+morebtn.addEventListener('click', () => {
+  if (!moreLoaded) {
+    document.getElementById('reelgrid').innerHTML = REELS.slice(2).map(reelHTML).join('');
+    document.getElementById('ytgrid').innerHTML = VIDEOS.slice(1).map(ytHTML).join('');
+    moreLoaded = true;
+  }
+  const open = more.hidden;
+  more.hidden = !open;
+  morebtn.setAttribute('aria-expanded', open);
+  if (!open) document.getElementById('reels').scrollIntoView({behavior: 'smooth'});
 });
+
+const play = p => { p.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${p.dataset.id}?autoplay=1&rel=0" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen title="YouTube"></iframe>`; p.classList.add('on'); };
+document.addEventListener('click', e => { const p = e.target.closest('.player:not(.on)'); if (p) play(p); });
+document.addEventListener('keydown', e => { const p = e.target.closest?.('.player:not(.on)'); if (p && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); play(p); } });
 
 // language: ?lang=en|es, else browser language
 function setLang(l){
