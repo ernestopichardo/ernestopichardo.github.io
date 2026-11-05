@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ernesto Pichardo — Productor Audiovisual</title>
+<meta name="description" content="Productor audiovisual y estratega de contenido para YouTube, podcasts y formato corto. 10M+ impresiones, reels de hasta 2.3M de vistas.">
+<meta property="og:title" content="Ernesto Pichardo — Productor Audiovisual & Estratega de Contenido">
+<meta property="og:description" content="YouTube, podcasts y formato corto. 10M+ impresiones · reels de hasta 2.3M de vistas.">
+<meta property="og:image" content="https://i.ytimg.com/vi/oAeK76qh-OE/hqdefault.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2314141a'/><circle cx='16' cy='16' r='7' fill='%23ff3b3b'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0d0d12; --bg2:#14141b; --card:#1a1a23; --line:#2a2a36;
+  --text:#f2f2f5; --muted:#9a9aab; --accent:#4f6bff; --accent2:#7d93ff; --rec:#ff3b3b;
+  --radius:16px; --max:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:Poppins,system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+.mono{font-family:"JetBrains Mono",ui-monospace,monospace}
+
+/* nav */
+nav{position:sticky;top:0;z-index:20;background:rgba(13,13,18,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.brand{font-weight:800;letter-spacing:.06em;font-size:15px;white-space:nowrap}
+.navlinks{display:flex;gap:22px;align-items:center;font-size:14px;color:var(--muted)}
+.navlinks a:hover{color:var(--text)}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.lang button{background:none;border:0;color:var(--muted);font:600 12px Poppins,sans-serif;padding:6px 12px;cursor:pointer}
+.lang button.on{background:var(--accent);color:#fff}
+@media(max-width:720px){.navlinks .hide-m{display:none}}
+
+/* hero */
+.hero{padding:72px 0 56px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:-40% -10% auto auto;width:640px;height:640px;background:radial-gradient(circle,rgba(79,107,255,.22),transparent 65%);pointer-events:none}
+.rec{display:inline-flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);border:1px solid var(--line);padding:6px 14px;border-radius:999px;margin-bottom:28px}
+.rec i{width:9px;height:9px;border-radius:50%;background:var(--rec);animation:blink 1.2s infinite}
+@keyframes blink{50%{opacity:.2}}
+h1{font-size:clamp(40px,7.5vw,84px);line-height:1.02;font-weight:800;letter-spacing:-.02em}
+.role{color:var(--accent2);font-weight:600;font-size:clamp(14px,1.8vw,17px);letter-spacing:.08em;text-transform:uppercase;margin:18px 0 18px}
+.lead{max-width:640px;color:#c9c9d4;font-size:clamp(16px,1.9vw,19px)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:12px;font-weight:600;font-size:15px;border:1px solid var(--line);transition:.15s}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.primary:hover{background:#3f59f0}
+.btn:hover{border-color:var(--accent2)}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);background:var(--bg2);border:1px solid var(--line);border-radius:var(--radius);margin-top:56px}
+.stat{padding:26px 18px;text-align:center;border-left:1px solid var(--line)}
+.stat:first-child{border-left:0}
+.stat b{display:block;font-family:"JetBrains Mono",monospace;font-size:clamp(26px,3.6vw,38px);color:var(--accent2);font-weight:700}
+.stat span{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+@media(max-width:720px){.stats{grid-template-columns:1fr 1fr}.stat:nth-child(3){border-left:0}.stat:nth-child(n+3){border-top:1px solid var(--line)}}
+
+/* sections */
+section{padding:72px 0}
+.kicker{font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--rec);letter-spacing:.1em;margin-bottom:10px}
+h2{font-size:clamp(28px,4vw,42px);line-height:1.15;font-weight:700;letter-spacing:-.01em}
+.sub{color:var(--muted);margin-top:10px;max-width:640px}
+.credit{display:inline-flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chip{font-size:13px;padding:6px 12px;border-radius:999px;background:var(--card);border:1px solid var(--line);color:#d6d6e0}
+
+/* reels */
+.reels{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px;margin-top:36px}
+.reel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+.reel .frame{position:relative;height:384px;overflow:hidden;background:#000}
+.reel iframe{position:absolute;left:0;top:-54px;width:100%;height:calc(100% + 54px + 180px);border:0}
+.reel .meta{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;border-top:1px solid var(--line)}
+.views{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:20px}
+.views small{font-family:Poppins,sans-serif;font-weight:500;font-size:12px;color:var(--muted);margin-left:6px}
+.reel .meta a{font-size:13px;color:var(--accent2)}
+
+/* youtube */
+.yt{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(280px,100%),1fr));gap:22px;margin-top:36px}
+.ytcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.player{position:relative;aspect-ratio:16/9;background:#000;cursor:pointer}
+.player img{width:100%;height:100%;object-fit:cover;display:block;opacity:.88;transition:.2s}
+.player:hover img{opacity:1}
+.player .play{position:absolute;inset:0;margin:auto;width:68px;height:48px;border-radius:12px;background:rgba(255,59,59,.92);display:grid;place-items:center}
+.player .play::after{content:"";border-left:18px solid #fff;border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:4px}
+.player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.ytcard .body{padding:16px 18px 20px}
+.ytcard h3{font-size:16px;font-weight:600;line-height:1.4}
+.ytcard .views{font-size:17px;margin-top:10px;display:block}
+
+/* about */
+.about{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:start}
+@media(max-width:860px){.about{grid-template-columns:1fr}}
+.exp{display:flex;flex-direction:column;gap:22px;margin-top:8px}
+.job{border-left:2px solid var(--accent);padding-left:18px}
+.job h3{font-size:16px;font-weight:600}
+.job .when{font-size:13px;color:var(--muted);font-family:"JetBrains Mono",monospace}
+.job p{color:#c9c9d4;font-size:14.5px;margin-top:6px}
+.group{margin-top:26px}
+.group h4{font-size:12px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px;font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.brands{display:flex;flex-wrap:wrap;gap:10px 22px;font-weight:700;font-size:18px;color:#d6d6e0}
+
+/* contact */
+.contact{background:linear-gradient(135deg,#1b1f3d,#14141b 60%);border:1px solid var(--line);border-radius:24px;padding:clamp(28px,5vw,56px)}
+.contact .ctas{margin-top:26px}
+footer{padding:36px 0 48px;color:var(--muted);font-size:13px;text-align:center}
+
+[data-en]{display:none}
+html[lang=en] [data-es]{display:none}
+html[lang=en] [data-en]{display:revert}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#top" class="brand">ERNESTO PICHARDO</a>
+    <div class="navlinks">
+      <a href="#reels" class="hide-m"><span data-es>Trabajo</span><span data-en>Work</span></a>
+      <a href="#sobre" class="hide-m"><span data-es>Sobre mí</span><span data-en>About</span></a>
+      <a href="#contacto" class="hide-m"><span data-es>Contacto</span><span data-en>Contact</span></a>
+      <div class="lang" role="group" aria-label="Idioma / Language">
+        <button type="button" data-set="es">ES</button><button type="button" data-set="en">EN</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="rec mono"><i></i>REC <span id="tc">00:00:00:00</span></div>
+    <h1>Ernesto<br>Pichardo</h1>
+    <p class="role">
+      <span data-es>Productor Audiovisual &amp; Estratega de Contenido</span>
+      <span data-en>Video Producer &amp; Content Strategist</span>
+    </p>
+    <p class="lead">
+      <span data-es>Llevo una idea desde el guion hasta la publicación: producción, cámara, audio y edición para YouTube, podcasts y formato corto, con foco en ganchos y retención.</span>
+      <span data-en>I take an idea from script to publish: producing, shooting, audio and editing for YouTube, podcasts and short-form, built around hooks and audience retention.</span>
+    </p>
+    <div class="ctas">
+      <a class="btn primary" href="#reels"><span data-es>Ver mi trabajo</span><span data-en>See my work</span> ↓</a>
+      <a class="btn" id="cvbtn" href="cv/CV_Ernesto_Pichardo_ES.pdf" target="_blank" rel="noopener"><span data-es>Descargar CV</span><span data-en>Download CV</span></a>
+      <a class="btn" href="#contacto"><span data-es>Contactar</span><span data-en>Get in touch</span></a>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b>10M+</b><span data-es>Impresiones</span><span data-en>Impressions</span></div>
+      <div class="stat"><b>9.8M</b><span data-es>Vistas · 7 reels</span><span data-en>Views · 7 reels</span></div>
+      <div class="stat"><b>2.3M</b><span data-es>Reel más visto</span><span data-en>Top reel</span></div>
+      <div class="stat"><b>61.8K</b><span data-es>Horas vistas</span><span data-en>Watch hours</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="reels">
+  <div class="wrap">
+    <p class="kicker">● 01 / <span data-es>FORMATO CORTO</span><span data-en>SHORT-FORM</span></p>
+    <h2><span data-es>Reels virales</span><span data-en>Viral reels</span></h2>
+    <p class="sub">
+      <span data-es>Siete reels para The Driver Show que suman 9.8 millones de vistas en Instagram.</span>
+      <span data-en>Seven reels for The Driver Show totaling 9.8 million views on Instagram.</span>
+    </p>
+    <div class="credit">
+      <span class="chip"><span data-es>Producción</span><span data-en>Producing</span></span>
+      <span class="chip"><span data-es>Guion</span><span data-en>Script</span></span>
+      <span class="chip"><span data-es>Cámara</span><span data-en>Camera</span></span>
+      <span class="chip">Audio</span>
+      <span class="chip"><span data-es>Edición</span><span data-en>Editing</span></span>
+    </div>
+    <div class="reels" id="reelgrid"></div>
+  </div>
+</section>
+
+<section id="youtube" style="padding-top:24px">
+  <div class="wrap">
+    <p class="kicker">● 02 / <span data-es>FORMATO LARGO</span><span data-en>LONG-FORM</span></p>
+    <h2><span data-es>YouTube: entrevistas y podcast</span><span data-en>YouTube: interviews &amp; podcast</span></h2>
+    <p class="sub">
+      <span data-es>Entrevistas de formato largo con multicámara. Producción, guion, cámara, audio y edición.</span>
+      <span data-en>Multi-camera long-form interviews. Producing, script, camera, audio and editing.</span>
+    </p>
+    <div class="yt" id="ytgrid"></div>
+  </div>
+</section>
+
+<section id="sobre">
+  <div class="wrap about">
+    <div>
+      <p class="kicker">● 03 / <span data-es>SOBRE MÍ</span><span data-en>ABOUT</span></p>
+      <h2><span data-es>Narrativa de cine,<br>pensada para retener.</span><span data-en>Film storytelling,<br>built to retain.</span></h2>
+      <p class="sub" style="margin-top:16px">
+        <span data-es>Graduado de Cine y Comunicación Audiovisual en INTEC. Combino narrativa cinematográfica con análisis de retención y diseño de ganchos para que la gente vea hasta el final. Trabajo en español e inglés (competencia profesional).</span>
+        <span data-en>Film &amp; Audiovisual Communication graduate (INTEC). I blend cinematic storytelling with retention analytics and hook design so people watch to the end. Native Spanish, professional English — available for remote work.</span>
+      </p>
+      <div class="group">
+        <h4><span data-es>Producción y estrategia</span><span data-en>Production &amp; strategy</span></h4>
+        <div class="chips">
+          <span class="chip"><span data-es>Producción end-to-end</span><span data-en>End-to-end production</span></span>
+          <span class="chip"><span data-es>Storytelling y guion</span><span data-en>Storytelling &amp; scripting</span></span>
+          <span class="chip"><span data-es>Dirección de podcast</span><span data-en>Podcast directing</span></span>
+          <span class="chip"><span data-es>Setup multicámara</span><span data-en>Multi-cam setup</span></span>
+          <span class="chip">Live switching</span>
+          <span class="chip"><span data-es>Retención en YouTube</span><span data-en>YouTube retention</span></span>
+          <span class="chip"><span data-es>Viralidad en formato corto</span><span data-en>Short-form virality</span></span>
+        </div>
+      </div>
+      <div class="group">
+        <h4><span data-es>Software y equipo</span><span data-en>Software &amp; gear</span></h4>
+        <div class="chips">
+          <span class="chip">DaVinci Resolve</span><span class="chip">Premiere Pro</span><span class="chip">Lightroom</span><span class="chip">Photoshop</span>
+          <span class="chip"><span data-es>Iluminación de estudio</span><span data-en>Studio lighting</span></span>
+          <span class="chip"><span data-es>Rigging de audio y cámara</span><span data-en>Audio &amp; camera rigging</span></span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="exp">
+        <div class="job">
+          <h3><span data-es>Productor de Contenido &amp; Audiovisual</span><span data-en>Content &amp; Video Producer</span> · The Driver Show</h3>
+          <div class="when">2024 — <span data-es>Presente</span><span data-en>Present</span></div>
+          <p><span data-es>Dirección y producción de video largo en YouTube, podcast y formato vertical. Entrevistas con 2.05M+ impresiones y 61,800+ horas vistas; reels de hasta 2.3M de vistas y 200K+ interacciones.</span><span data-en>Lead producer for long-form YouTube, podcast and vertical video. Interviews with 2.05M+ impressions and 61,800+ watch hours; reels up to 2.3M views and 200K+ interactions.</span></p>
+        </div>
+        <div class="job">
+          <h3><span data-es>Videógrafo</span><span data-en>Videographer</span> · GO3 Eventos y Audiovisuales</h3>
+          <div class="when">2023</div>
+          <p><span data-es>Cámara en locación para eventos masivos y campaña política, en producciones multicámara de ritmo rápido.</span><span data-en>On-location camera for large events and a political campaign in fast-paced multi-cam productions.</span></p>
+        </div>
+        <div class="job">
+          <h3><span data-es>Fotógrafo Comercial &amp; Editor de Video</span><span data-en>Commercial Photographer &amp; Video Editor</span> · Freelance</h3>
+          <div class="when">2018 — 2023</div>
+          <p><span data-es>Fotografía comercial y edición para marcas y creadores.</span><span data-en>Commercial photography and editing for brands and creators.</span></p>
+        </div>
+      </div>
+      <div class="group">
+        <h4><span data-es>Marcas</span><span data-en>Brands</span></h4>
+        <div class="brands"><span>Burger King</span><span>Krispy Kreme</span><span>Hummus</span><span>Caserío</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="wrap">
+    <div class="contact">
+      <p class="kicker">● <span data-es>DISPONIBLE</span><span data-en>AVAILABLE</span></p>
+      <h2><span data-es>¿Hacemos el próximo video juntos?</span><span data-en>Let's make your next video.</span></h2>
+      <p class="sub"><span data-es>Santo Domingo, República Dominicana. Disponible para trabajo presencial, híbrido o remoto.</span><span data-en>Based in Santo Domingo, Dominican Republic (UTC-4). Open to remote roles worldwide.</span></p>
+      <div class="ctas">
+        <a class="btn primary" href="mailto:ernestopc659@gmail.com">ernestopc659@gmail.com</a>
+        <a class="btn" href="https://www.linkedin.com/in/ernesto-pichardo-cabrera-4a9462198" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn" href="cv/CV_Ernesto_Pichardo_ES.pdf" target="_blank" rel="noopener">CV <span class="mono">ES</span></a>
+        <a class="btn" href="cv/CV_Ernesto_Pichardo_EN.pdf" target="_blank" rel="noopener">CV <span class="mono">EN</span></a>
+        <a class="btn" href="https://drive.google.com/file/d/1sR3-7AAZTstZ_X4S7qlGQ6W67JrF1kUq/view" target="_blank" rel="noopener"><span data-es>Portafolio PDF</span><span data-en>Portfolio PDF</span> ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Ernesto Pichardo · Santo Domingo, RD</footer>
+
+<script>
+const REELS = [
+  ["DFyj42AvfJj", "2.3M"],
+  ["DZnTOzHN-5-", "2M"],
+  ["DWUGbpcDYG1", "1.8M"],
+  ["DXc1zMsDXKv", "1.4M"],
+  ["DXQE-VSjbs1", "1M"],
+  ["DdRjqVhNiD9", "880K"],
+  ["DdXez-gNoS0", "489K"]
+];
+const VIDEOS = [
+  ["oAeK76qh-OE", "155K", "Ernesto Beras-Goico: Expone cómo los talleres engañan a sus clientes"],
+  ["W6qL2GxLJKs", "85K", "El problema no es tu carro… eres tú"],
+  ["NVQ0W5XpRKE", "60K", "Ex-Gerente de Volvo: La estafa de las garantías y la psicología del ego dominicano"]
+];
+const views = '<small><span data-es>vistas</span><span data-en>views</span></small>';
+
+document.getElementById('reelgrid').innerHTML = REELS.map(([id, v]) => `
+  <article class="reel">
+    <div class="frame"><iframe src="https://www.instagram.com/reel/${id}/embed/" loading="lazy" scrolling="no" allowtransparency="true" allow="encrypted-media" title="Reel ${v}"></iframe></div>
+    <div class="meta"><span class="views">${v}${views}</span>
+      <a href="https://www.instagram.com/reel/${id}/" target="_blank" rel="noopener">Instagram ↗</a></div>
+  </article>`).join('');
+
+document.getElementById('ytgrid').innerHTML = VIDEOS.map(([id, v, t]) => `
+  <article class="ytcard">
+    <div class="player" data-id="${id}" role="button" tabindex="0" aria-label="Play: ${t}">
+      <img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span>
+    </div>
+    <div class="body"><h3>${t}</h3><span class="views">${v}${views}</span></div>
+  </article>`).join('');
+
+document.querySelectorAll('.player').forEach(p => {
+  const go = () => { p.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${p.dataset.id}?autoplay=1&rel=0" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen title="YouTube"></iframe>`; };
+  p.addEventListener('click', go, {once:true});
+  p.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } });
+});
+
+// language: ?lang=en|es, else browser language
+function setLang(l){
+  document.documentElement.lang = l;
+  document.querySelectorAll('.lang button').forEach(b => b.classList.toggle('on', b.dataset.set === l));
+  document.getElementById('cvbtn').href = `cv/CV_Ernesto_Pichardo_${l.toUpperCase()}.pdf`;
+  document.title = l === 'en' ? 'Ernesto Pichardo — Video Producer' : 'Ernesto Pichardo — Productor Audiovisual';
+}
+const q = new URLSearchParams(location.search).get('lang');
+setLang(q === 'en' || q === 'es' ? q : (navigator.language || 'es').toLowerCase().startsWith('es') ? 'es' : 'en');
+document.querySelectorAll('.lang button').forEach(b => b.addEventListener('click', () => {
+  setLang(b.dataset.set);
+  const u = new URL(location); u.searchParams.set('lang', b.dataset.set); history.replaceState(null, '', u);
+}));
+
+// REC timecode
+const t0 = performance.now(), tc = document.getElementById('tc'), p2 = n => String(n).padStart(2, '0');
+setInterval(() => { const s = (performance.now() - t0) / 1000;
+  tc.textContent = `${p2(Math.floor(s/3600))}:${p2(Math.floor(s/60)%60)}:${p2(Math.floor(s)%60)}:${p2(Math.floor(s*24)%24)}`; }, 42);
+</script>
+</body>
+</html>
