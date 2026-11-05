@@ -255,7 +255,7 @@ html[lang=en] [data-en]{display:revert}
         <a class="btn" href="https://www.linkedin.com/in/ernesto-pichardo-cabrera-4a9462198" target="_blank" rel="noopener">LinkedIn ↗</a>
         <a class="btn" href="cv/CV_Ernesto_Pichardo_ES.pdf" target="_blank" rel="noopener">CV <span class="mono">ES</span></a>
         <a class="btn" href="cv/CV_Ernesto_Pichardo_EN.pdf" target="_blank" rel="noopener">CV <span class="mono">EN</span></a>
-        <a class="btn" href="https://drive.google.com/file/d/1sR3-7AAZTstZ_X4S7qlGQ6W67JrF1kUq/view" target="_blank" rel="noopener"><span data-es>Portafolio PDF</span><span data-en>Portfolio PDF</span> ↗</a>
+        <a class="btn" id="pfbtn" href="portfolio/Portafolio_Ernesto_Pichardo_ES.pdf" target="_blank" rel="noopener"><span data-es>Portafolio PDF</span><span data-en>Portfolio PDF</span> ↗</a>
       </div>
     </div>
   </div>
@@ -306,6 +306,7 @@ function setLang(l){
   document.documentElement.lang = l;
   document.querySelectorAll('.lang button').forEach(b => b.classList.toggle('on', b.dataset.set === l));
   document.getElementById('cvbtn').href = `cv/CV_Ernesto_Pichardo_${l.toUpperCase()}.pdf`;
+  document.getElementById('pfbtn').href = l === 'en' ? 'portfolio/Portfolio_Ernesto_Pichardo_EN.pdf' : 'portfolio/Portafolio_Ernesto_Pichardo_ES.pdf';
   document.title = l === 'en' ? 'Ernesto Pichardo — Video Producer' : 'Ernesto Pichardo — Productor Audiovisual';
 }
 const q = new URLSearchParams(location.search).get('lang');
